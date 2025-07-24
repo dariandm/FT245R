@@ -13,6 +13,10 @@ void controlLED(FT_HANDLE ftHandle);
 void sendMorseCode(FT_HANDLE ftHandle);
 
 int main() {
+
+    //printf("Attach debugger now. Press ENTER to continue...\n");
+    //getchar();  // Wait for debugger to attach
+
     FT_HANDLE ftHandle;
     int choice;
 
@@ -37,6 +41,7 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
         getchar(); // to consume the newline character left by scanf
+        //choice = 2;
 
         if (choice == 5) {
             break;

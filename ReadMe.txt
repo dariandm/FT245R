@@ -44,7 +44,7 @@ To compile on Mac:
 3. Open the command line and change directory to the directory with the source code.  
 4. From the command prompt, type: 
 
-gcc -o controller *.c libftd2xx.a -I. -L. -framework CoreFoundation -framework IOKit -o controller
+gcc *.c libftd2xx.a -I. -L. -framework CoreFoundation -framework IOKit -o controller
 
 This should compile the code and return and executable called controller.
 Start the controller from the command line by typing: ./controller
